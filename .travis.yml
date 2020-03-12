@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+ node
+install:
+ npm install -g elm --unsafe-perm=true
+ npm install -g elmstatic
+script:
+ elmstatic
+
+deploy:
+  provider: s3
+  bucket: "zachran-babu.cz"
+  region: eu-central-1
+  skip_cleanup: true
+  local_dir: _site
+  access_key_id: "AKIASNTF7ZGH6M5EFHMA"
+  secret_access_key:
+    secure: TCu6qc5FBvTcDLj4rhKVck27dh8BZQKcNa/a8Ah3mUWJQI7S3ZbILmeOd/iBTH/COEAqreL9kfDtS9pyNSfL7ZGMFronSORnCug6xm7jVJCH3L9T12XhOoREL5xENjPGssApOTLQT/2X+wIt7qwb98HnTx4w9Pe7cfcLZy9IbKIzlOBxggCiBpl4YaE8O4o8Myz68UuUpQ90P3ksyzekOQV2+aNKYOwQOsAQhBiI4B9Iq/XYlp6JV3ovF7kE/64Wqzqt3iSIezLaKG/zAe+3Wyw9mLQnjJijunbLk8ytYbzphagaJn2sJQqM07h1RcyeI7i+kHhy8vSNqi4KCCrRFZoZg3Y2O7L2xwlQJS9UVcB5j0c/A8DUW6tkKblg8O5JWskkMSKDyebWp/OtyAIupOulGM+3ZvFu0R1+jDRo8xUJOa0gUDfrFGGZ0qrMQ59gI3GwjHZEKxAQoo0VH2B21Sq3J1pD9YrznrWEkU8+zRLTyHlv7CslAbs/5jbwYw/1T1t6JcbGZlSsY1XqmbNpaqygOl9UMDE7BLgDM5FPPFlu2Xdg9APQoDtk4ACgc2gjnqL/y8x6YRlBXsy8vNu3ueyCicDg37jiT0G1YVWV639Y+NS7hctcfNrwLYbLsm+b69w1e7cozQP2wjv2DsGOPRuN+5O68DmRJvY053Oy7uI=
