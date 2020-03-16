@@ -19,7 +19,7 @@ M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.3
                 ]
                 []
     in
-    Html.node "svg" [ attribute "width" "16", attribute "height" "16", attribute "viewBox" "0 0 16 16" ] [ pathNode ]
+    Html.node "svg" [ attribute "width" "20", attribute "height" "20", attribute "viewBox" "0 0 16 16" ] [ pathNode ]
 
 
 twitterIcon : Html Never
@@ -34,7 +34,66 @@ M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-
                 ]
                 []
     in
-    Html.node "svg" [ attribute "width" "16", attribute "height" "16", attribute "viewBox" "0 0 16 16" ] [ pathNode ]
+    Html.node "svg" [ attribute "width" "20", attribute "height" "20", attribute "viewBox" "0 0 16 16" ] [ pathNode ]
+
+
+facebookIcon : Html Never
+facebookIcon =
+    let
+        pathNode =
+            Html.node "path"
+                [ attribute "fill" "#fff"
+                , attribute "d" """
+M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z
+            """
+                ]
+                []
+    in
+    Html.node "svg" [ attribute "width" "24", attribute "height" "24", attribute "viewBox" "0 0 500 500" ] [ pathNode ]
+
+
+elmIcon : Html Never
+elmIcon =
+    let
+        pathNodes =
+            [ Html.node "path"
+                [ attribute "fill" "#5FB4CB"
+                , attribute "d" "M128 135.022L7.023 256h241.955z"
+                ]
+                []
+            , Html.node "path"
+                [ attribute "fill" "#EEA400"
+                , attribute "d" "M202.332 195.311L256 248.98V141.643z"
+                ]
+                []
+            , Html.node "path"
+                [ attribute "fill" "#596277"
+                , attribute "d" "M120.978 128L0 7.022V248.98z"
+                ]
+                []
+            , Html.node "path"
+                [ attribute "fill" "#5FB4CB"
+                , attribute "d" "M256 113.806V0H142.193z"
+                ]
+                []
+            , Html.node "path"
+                [ attribute "fill" "#8CD636"
+                , attribute "d" "M195.584 67.434l60.288 60.289l-60.563 60.564l-60.29-60.29z"
+                ]
+                []
+            , Html.node "path"
+                [ attribute "fill" "#8CD636"
+                , attribute "d" "M7.021 0l55.725 55.726h121.13L128.15 0z"
+                ]
+                []
+            , Html.node "path"
+                [ attribute "fill" "#EEA400"
+                , attribute "d" "M128 120.979l55.322-55.323H72.677z"
+                ]
+                []
+            ]
+    in
+    Html.node "svg" [ attribute "width" "20", attribute "height" "20", attribute "viewBox" "0 0 256 256" ] pathNodes
 
 
 markdown : String -> Html Never
@@ -56,10 +115,10 @@ header =
     [ div [ class "header-logo" ]
         [ img [ alt "Zachran babu", src "/img/zachranbabu.svg", attribute "height" "70" ]
             []
-        , h1 [] [text "Zachraň bábu (i dědu)"]
+        , h1 [] [ text "Zachraň bábu (i dědu)" ]
         ]
-
     , div [ class "navigation" ] []
+
     --     [ ul []
     --         [ li []
     --             [ a [ href "/posts" ]
@@ -81,28 +140,34 @@ header =
 footer : Html Never
 footer =
     div [ class "footer" ]
-        [ 
-        --     img
-        --     [ alt "Author's blog"
-        --     , src "/img/logo.png"
-        --     , attribute "style" "float: left; padding-top: 7px"
-        --     , attribute "width" "75"
-        --     ]
-        --     []
-        -- ,
-         div [ class "link" ]
+        [ --     img
+          --     [ alt "Author's blog"
+          --     , src "/img/logo.png"
+          --     , attribute "style" "float: left; padding-top: 7px"
+          --     , attribute "width" "75"
+          --     ]
+          --     []
+          -- ,
+          div [ class "link" ]
+            [ facebookIcon
+            , a [ href "https://facebook.com/zachranbabu" ]
+                [ text "Diskutujte, sdílejte" ]
+            ]
+        , div [ class "link" ]
             [ githubIcon
             , a [ href "https://github.com/trin-cz/zachranbabu" ]
-                [ text "Pomozte s touto strankou" ]
+                [ text "Vylepšete web" ]
             ]
+
         -- , div [ class "link" ]
         --     [ twitterIcon
         --     , a [ href "https://twitter.com" ]
         --         [ text "Author's Twitter" ]
         --     ]
         , div [ class "link" ]
-            [ a [ href "https://www.npmjs.com/package/elmstatic" ]
-                [ text "Created with Elmstatic" ]
+            [ elmIcon
+            , a [ href "https://www.npmjs.com/package/elmstatic" ]
+                [ text "ElmStatic" ]
             ]
         ]
 

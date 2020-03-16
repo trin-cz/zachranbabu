@@ -47,7 +47,7 @@ Chránit sebe před ostatními je mnohem těžší než chránit ostatní před 
  - Myjte si ruce mýdlem. Hlavně po příchodu domů. I 20 sekund stačí ke zničení viru.
  - Nechoďte mezi lidi, když nemusíte.
  - Nesahejte si na obličej, nos, pusu a hlavně do očí. Virus byste si přenesli z ruky na sliznici a nakazili byste se.
- - Pečujte o svojí imunitu. Vitamín C, studená sprcha, spánek, alespoň minimum cvičení, zázvor, ...
+ - Pečujte o svoji imunitu. Vitamín C, studená sprcha, spánek, alespoň minimum cvičení, zázvor, ...
  
 
 
