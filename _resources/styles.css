@@ -7,11 +7,12 @@ body {
     grid-template-areas:
             "header-logo header-logo navigation navigation"
             "sidebar content content content"
-            "footer foolter footer footer";
+            "footer footer footer footer";
 }
 
 .sidebar {
     grid-area: sidebar;
+    min-width: 50px;
 }
 
 .content {

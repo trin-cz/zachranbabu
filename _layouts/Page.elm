@@ -112,8 +112,6 @@ layout title contentItems =
     header
         ++ [ div [ class "sidebar" ]
                 []
-           , div [ class "sidebar2" ]
-                []
            , div [ class "content" ]
                 ([ h1 [] [ text title ] ] ++ contentItems)
            , footer
