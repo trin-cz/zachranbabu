@@ -3,7 +3,7 @@ title: ""
 layout: Page
 ---
 
-## DYI Zakladač šikmých proužků
+## DIY Zakladač šikmých proužků
 
 Češi se vrhli na šití roušek. Moje žena taky. Spousta galanterie je aktuálně vyprodaná a jedním z nedostatkových pomůcek je zakladač šikmých proužků. Toto je návod, jak si ho doma vyrobit z PET lahve za pár minut.
 
@@ -21,7 +21,7 @@ layout: Page
 
 ## Postup
 
-Vytiskněte si šablonu, případně trochu upravte rozměry podle toho, jak široké proužky potřebujete.
+Vytiskněte si šablonu, případně trochu upravte rozměry podle toho, jak široké proužky potřebujete. [Stáhnout PDF](/zakladac_sikmych_prouzku.pdf)
 
 ![shape](/img/00-shape.png)
 
