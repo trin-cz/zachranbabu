@@ -3,7 +3,8 @@
 */
 
 body {
-    display: grid;           
+    display: grid;         
+    grid-template-columns: minmax(1fr, 100vw);  
     grid-template-areas:
             "header-logo header-logo navigation navigation"
             "sidebar content content content"
@@ -47,6 +48,7 @@ body {
 @media only screen and (min-width: 600px) {
     body {
         display: grid;
+        grid-template-columns: minmax(1fr, 100vw);
         grid-template-areas:
             "header-logo header-logo navigation navigation"
             "sidebar     content     content    content"
